@@ -27,7 +27,6 @@ Public Class MIS
         DeviceEnableQuery()
         '开启线程自动打印功能
         If startThreat = "1" Then
-
             threadCycle = New Thread(AddressOf RoadCarInfoCycle)
             threadCycle.Start()
         End If
