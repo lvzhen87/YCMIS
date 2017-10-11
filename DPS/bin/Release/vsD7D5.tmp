@@ -1,0 +1,219 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+YCMIS
+</name>
+</assembly>
+<members>
+<member name="P:YCMIS.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:YCMIS.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:YCMIS.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="P:YCMIS.clsOracle.Message">
+	<summary>
+ 数据库操作异常时的错误信息。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.clsOracle.GetDataSet(System.String)">
+	<summary>
+ 返回查找的数据,返回值为DataSet类型,返回值为Nothing时数据库异常。
+ </summary>
+	<param name="strSql"> 查找语句。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.clsOracle.Execute(System.Collections.Generic.List{System.String})">
+	<summary>
+ 执行多个数据库语句,具有事务回滚作用,返回值为布尔类型,True:执行成功; False:执行失败。
+ </summary>
+	<param name="strSql">执行语句。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.clsOracle.MessageBox(System.String,Microsoft.VisualBasic.MsgBoxStyle,System.String)">
+	<summary>
+ 信息框。
+ </summary>
+	<param name="Info">信息。</param>
+	<param name="MsgBoxStyle">样式。</param>
+	<remarks></remarks>
+</member><member name="M:YCMIS.modMain.SocketString(System.String,System.String)">
+	<summary>
+ 控制单个道闸
+ </summary>
+	<param name="barrierGateID">道闸ID</param>
+	<param name="schema">控制标识：2 红灯 3 绿灯 4 抬杆 5 落杆</param>
+	<returns></returns>
+	<remarks>"GATEORDER{""barrierGateID"":""7"",""schema"":5}" + "vbcrlf"</remarks>
+</member><member name="M:YCMIS.modMain.SocketStringAll(System.String[],System.String)">
+	<summary>
+ 控制所用道闸
+ </summary>
+	<param name="barrierGateID">道闸ID数组</param>
+	<param name="schema">控制标识：2 红灯 3 绿灯 4 抬杆 5 落杆</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.frmLogin.btn_Reset_Click(System.Object,System.EventArgs)">
+	<summary>
+ 重置按钮
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:YCMIS.frmLogin.btn_OK_Click(System.Object,System.EventArgs)">
+	<summary>
+ 确定按钮
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:YCMIS.frmLogin.InvalidQuery">
+	<summary>
+ 查询版本号及密码失效日期
+ </summary>
+	<remarks></remarks>
+</member><member name="P:YCMIS.DataBase.Message">
+	<summary>
+ 数据库操作异常时的错误信息。
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.GetConnection">
+	<summary>
+ 连接数据库
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.CloseConnection">
+	<summary>
+ 关闭数据库
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.Search(System.String)">
+	<summary>
+ 查询数据，并返回DataSet,返回值为Nothing时数据库异常。
+ </summary>
+	<param name="strSql">查询语句</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.Insert(System.String)">
+	<summary>
+ 添加数据,返回值为布尔类型,True:数据添加成功; False:数据添加失败。
+ </summary>
+	<param name="strSql">插入语句。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.Update(System.String)">
+	<summary>
+ 更新数据,返回值为布尔类型,True:数据更新成功; False:数据更新失败。
+ </summary>
+	<param name="strSql">更新语句。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.Delete(System.String)">
+	<summary>
+ 删除数据,返回值为布尔类型,True:数据删除成功; False:数据删除失败。
+ </summary>
+	<param name="strSql">删除语句。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.DataBase.Execute(System.Collections.Generic.List{System.String})">
+	<summary>
+ 执行多个数据库语句,具有事务回滚作用,返回值为布尔类型,True:执行成功; False:执行失败。
+ </summary>
+	<param name="strSqlList">执行语句集。</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.DeviceEnableQuery">
+	<summary>
+ 查询DeviceEnable 是否启用
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.Init">
+	<summary>
+ 初始化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.AddRoadInfo(System.Int32,System.String[])">
+	<summary>
+ 将道路信息加载到结构体
+ </summary>
+	<param name="roadID"></param>
+	<param name="roadInfo"></param>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.BoundInfo">
+	<summary>
+ 初始化绑定道路信息
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.AllRoadString">
+	<summary>
+ 控制全部道路相关字符串
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.RoadCarInfo">
+	<summary>
+ 判断道路内车辆数量，当超出最大数时候 入口亮红灯、锁定（可以设置是否启用）；当小于最大数量时候 入口亮绿灯、解锁
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.RoadCarQuantity">
+	<summary>
+ 查询当前场内道路内车辆
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.UpdateRoadNumQuery">
+	<summary>
+ 查询当前场内道路内车辆
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.UpdateRoadNum(System.String)">
+	<summary>
+ 修改当前场内道路内车辆
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.SubRoadNum(System.String)">
+	<summary>
+ 修改当前场内道路内车辆
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.RoadTimeCheck">
+	<summary>
+ 判断当前道路落杆状态
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.RoadTimeCheckCycle">
+	<summary>
+ 判断落杆状态发送落杆指令
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.SendMessage(System.String)">
+	<summary>
+ 发送Socket消息
+ </summary>
+	<param name="SendMsg"></param>
+	<remarks></remarks>
+</member><member name="M:YCMIS.MIS.updateRoadNum(System.String,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+	<summary>
+ 修改当前场内道路内车辆
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
